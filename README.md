@@ -1,5 +1,5 @@
 # Mongous
-[![Build Status](https://travis-ci.org/nonproftechie/mongous.svg?branch=master)](https://travis-ci.org/nonproftechie/mongous) [![Coverage Status](https://coveralls.io/repos/github/nonproftechie/mongous/badge.svg?branch=master)](https://coveralls.io/github/nonproftechie/mongous?branch=master)  
+[![Build Status](https://travis-ci.org/nonproftechie/mongous.svg?branch=master)](https://travis-ci.org/nonproftechie/mongous) [![Coverage Status](https://coveralls.io/repos/github/nonproftechie/mongous/badge.svg?branch=master)](https://coveralls.io/github/nonproftechie/mongous?branch=master) [![PyPI version](https://badge.fury.io/py/mongous.svg)](https://badge.fury.io/py/mongous)  
 
 A (very) thin wrapper on top of PyMongo CRUD functions on Python 2 that uses some different query syntax.
 
@@ -27,7 +27,10 @@ posts.create(
 ```
 
 ## Installation
-Download source code and install to your library:
+```
+$ pip install mongous
+```
+Alternatively, you can download the source code and install to your library:
 ```
 $ python setup.py install
 ```
