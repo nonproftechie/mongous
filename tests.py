@@ -42,10 +42,11 @@ def test_simple_handler():
         }
     ]
 
-    result = handler.insert_many(docs)
+    result = handler.create_many(docs)
     assert result is not None
 
     reading_list = handler.read_many(type="book")
-    
+    assert reading_list is not None
+    assert len([book for book in reading_list]) == len(docs)
 
     handler.delete()

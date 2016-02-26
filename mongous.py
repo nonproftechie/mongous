@@ -20,6 +20,7 @@ class SimpleMongoCRUDHandler:
 
     def update(self, doc, **kwargs):
         doc = dict(doc)
+        del doc["_id"] # not allowed to edit
         mod = doc.copy()
         mod.update(kwargs)
         return self.collection.update_many(doc, {"$set": mod})
