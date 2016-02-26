@@ -7,16 +7,16 @@ A (very) thin wrapper on top of PyMongo CRUD functions in order to use some diff
 ### BEFORE (with PyMongo)
 ```python
 from pymongo import MongoClient as Client
+
 posts = Client().blog.posts
-...
 results = posts.find_one({"title": "Moby Dick"})
 ```
 
 ### AFTER (with Mongous)
 ```python
 from mongous import SimpleMongoCRUDHandler as Handler
+
 posts = Handler("blog", "posts")
-...
 results = posts.read(title="Moby Dick")
 ```
 
