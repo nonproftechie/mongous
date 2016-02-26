@@ -1,5 +1,7 @@
 # Mongous
-A (very) thin wrapper on top of PyMongo CRUD functions on Python 2 that makes some query syntax more Pythonic.
+[![Build Status](https://travis-ci.org/nonproftechie/mongous.svg?branch=master)](https://travis-ci.org/nonproftechie/mongous)  
+
+A (very) thin wrapper on top of PyMongo CRUD functions on Python 2 that uses some different query syntax.
 
 ## Example
 ### BEFORE (with PyMongo)
