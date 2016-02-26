@@ -38,4 +38,3 @@ In some cases you might need to do this:
 ```
 $ sudo python setup.py install
 ```
-*pip support coming soon*
