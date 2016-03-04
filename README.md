@@ -6,24 +6,18 @@ A (very) thin wrapper on top of PyMongo CRUD functions in order to use some diff
 ## Example
 ### BEFORE (with PyMongo)
 ```python
-post = {"author": "Mike",
-        "text": "My first blog post!",
-        "tags": ["mongodb", "python", "pymongo"],
-        "date": datetime.datetime.utcnow()}
+from pymongo import MongoClient as Client
 
-posts.insert_one(post)
+posts = Client().blog.posts
+results = posts.find_one({"title": "Moby Dick"})
 ```
 
 ### AFTER (with Mongous)
 ```python
-now = datetime.datetime.utcnow()
+from mongous import SimpleMongoCRUDHandler as Handler
 
-posts.create(
-    author="Mike",
-    text="My first blog post!",
-    tags=["mongodb", "python", "pymongo"],
-    date=now
-)
+posts = Handler("blog", "posts")
+results = posts.read(title="Moby Dick")
 ```
 
 ## Installation
