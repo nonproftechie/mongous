@@ -2,7 +2,7 @@
 from distutils.core import setup
 
 setup(name='mongous',
-      version='0.1.2',
+      version='0.1.3',
       description='A (very) thin Mongo CRUD wrapper library',
       author='Joshua Austin',
       author_email='nesher181@gmail.com',
