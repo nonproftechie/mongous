@@ -7,6 +7,7 @@ setup(name='mongous',
       author='Joshua Austin',
       author_email='nesher181@gmail.com',
       url='https://github.com/nonproftechie/mongous',
+      py_modules=["mongous"],
       download_url='https://github.com/nonproftechie/mongous/tarball/0.1.2',
       keywords=['database', 'mongo', 'mongous']
      )
