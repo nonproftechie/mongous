@@ -1,7 +1,7 @@
 # Mongous
 [![Build Status](https://travis-ci.org/nonproftechie/mongous.svg?branch=master)](https://travis-ci.org/nonproftechie/mongous) [![Coverage Status](https://coveralls.io/repos/github/nonproftechie/mongous/badge.svg?branch=master)](https://coveralls.io/github/nonproftechie/mongous?branch=master) [![PyPI version](https://badge.fury.io/py/mongous.svg)](https://badge.fury.io/py/mongous)  
 
-A (very) thin wrapper on top of PyMongo CRUD functions in order to use some different query syntax.  Another possible use is that the `SimpleCRUDHandler` class could be used as a base class for database models.  Tested to work on Python 2.6, 2.7, 3.3, 3.4, 3.5, pypy, and pypy3.
+A (very) thin wrapper on top of PyMongo CRUD functions in order to use some different query syntax.  Another possible use is that the `SimpleCRUDHandler` class could be used as a base class for database models.  Tested to work on Python 2.7, 3.3, 3.4, 3.5, pypy, and pypy3.
 
 ## Example
 ### BEFORE (with PyMongo)
