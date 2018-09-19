@@ -34,7 +34,7 @@ $ sudo python setup.py install
 ```
 
 ## API
-#### class `SimpleCRUDHandler`
+#### class `SimpleMongoCRUDHandler`
 ##### `__init__(self, database_name, collection_name, connection=None)`
 Constructor, sets database to `database_name`, collection to `collection_name`, and optionally uses the connection string `connection` if supplied.
 ##### `create(self, **kwargs)`
